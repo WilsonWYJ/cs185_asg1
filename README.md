@@ -2,4 +2,4 @@
 
 * This is Assignment 1 of CMPSC 185 by Yujie Wang (GitHub ID: WilsonWYJ)
 * Repo: https://github.com/WilsonWYJ/cs185_asg1
-* Website: 
+* Website: https://wilsonwyj.github.io/cs185_asg1/
