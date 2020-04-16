@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
 	<div class="header">
 		<h1>Projects</h1>
 	</div>
@@ -26,6 +27,22 @@
     <div>
         <img src="images/coderecipe.png" height="150px" width="150px">
         <span style="position: absolute; margin-top: 50px;">CodeRecipe: The website that helps students to learn programming using the latest and unprecedented methods</span>
-    </div>
+	</div>
+	
+	<script>
+		var topbutton = document.getElementById("topBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  topbutton.style.display = "block";
+		  } else {
+			  topbutton.style.display = "none";
+		  }
+		}
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>

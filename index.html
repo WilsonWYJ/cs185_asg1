@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
 	<div class="header">
 		<h1>Hi! Welcome to Yujie Wang's website!</h1>
 	</div>
@@ -25,7 +26,22 @@
                 Hi! My name is Yujie Wang. I am a second year Computer Science major student at UCSB. I came from Xiamen (Amoy), a small island located in southeast China. My hobbies include listening to music (especially Cantonese songs), watching movies, and travelling. I’ve been to most of provinces in China and 6 states in the US, and I am looking forward to exploring more! Nice to meet you all!
             </p>
 		</div>
-		
 	</div>
+
+	<script>
+		var topbutton = document.getElementById("topBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  topbutton.style.display = "block";
+		  } else {
+			  topbutton.style.display = "none";
+		  }
+		}
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>
