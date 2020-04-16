@@ -33,6 +33,10 @@ color: black;
     grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
     grid-auto-rows: 400px;
 }
+.project {
+    display: flex;
+    align-items: center;
+}
 /* .row {
     display: flex;
     flex-wrap: wrap;
