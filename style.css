@@ -24,13 +24,11 @@
 }
 
 .video-container {
-    position: fixed;
     display: grid;
     padding-top: 20px;
     padding-bottom: 20px;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
     max-width: 100%;
     grid-auto-rows: max-content;
     align-items: center;
@@ -42,13 +40,11 @@
 }
 
 .container {
-    position: fixed;
     display: grid;
     padding-top: 20px;
     padding-bottom: 20px;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
     max-width: 100%;
     grid-auto-rows: max-content;
     align-items: center;
