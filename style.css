@@ -1,36 +1,69 @@
-.header {
-
-}
 .nav-bar {
     display: flex
 }
 .tab {
     padding: 10px
 }
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: rgb(179, 172, 172);
+    cursor: pointer;
+}
+.active, .btn:hover {
+    background-color: wheat;
+    color: black;
+}
 #main-body {
     display: flex
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+
+.video-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-auto-rows: max-content;
 }
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-} 
-.column img {
-margin-top: 8px;
-vertical-align: middle;
-width: 100%;
-}
-.column video {
+.video-container video {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    }
-/* .div-inline {
-    display: inline;
-} */
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-auto-rows: max-content;
+}
+.container img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(179, 172, 172);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+}
+#topBtn:hover {
+    background-color: wheat;
+}
+
+
 
