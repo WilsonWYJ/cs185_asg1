@@ -18,34 +18,55 @@
 #main-body {
     display: flex
 }
+#myjpg {
+    width: 100%;
+    height: auto;
+}
 
 .video-container {
+    position: fixed;
     display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    max-width: 100%;
     grid-auto-rows: max-content;
+    align-items: center;
 }
 .video-container video {
-    margin-top: 8px;
-    vertical-align: middle;
     width: 100%;
+    height: auto;
+    min-width: 250px;
 }
 
 .container {
+    position: fixed;
     display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    max-width: 100%;
     grid-auto-rows: max-content;
+    align-items: center;
 }
 .container img {
-    margin-top: 8px;
-    vertical-align: middle;
     width: 100%;
+    height: auto;
+    min-width: 250px;
 }
 
 .project {
     display: flex;
     align-items: center;
+}
+.project img {
+    width: 20%;
+    height: auto;
+    min-width: 200px;
 }
 
 #topBtn {
