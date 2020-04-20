@@ -3,12 +3,15 @@
 <head>
 	<title>Yujie Wang's Website - Images</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet"/>
 </head>
 <body>
 	<button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+	
 	<div class="header">
 		<h1>Images</h1>
 	</div>
+
 	<div>
 		<button class="btn" onclick="window.location.href = 'index.html'">Home</button>
 		<button class="btn" onclick="window.location.href = 'images.html'">Images</button>
@@ -16,22 +19,23 @@
 		<button class="btn" onclick="window.location.href = 'projects.html'">Projects</button>
 		<button class="btn" onclick="window.location.href = 'https://github.com/WilsonWYJ'">My GitHub Page</button>
 	</div>
+
 	<div class="container">
-		<img src="images/lagoon.jpg"/>
-		<img src="images/flower1.jpg"/>
-		<img src="images/pool.jpg"/>
-		<img src="images/flower3.jpg"/>
-		<img src="images/manz.jpg"/>
-		<img src="images/an125.jpg"/>
-		<img src="images/flower2.jpg"/>
-		<img src="images/ucen.jpg"/>
-		<img src="images/sunset.jpg"/>
-		<img src="images/rainbow.jpg"/>
-		<img src="images/flower0.jpg"/>
-		<img src="images/ocean.jpg"/>
+		<a href="images/lagoon.jpg" data-lightbox="yw"><img src="images/lagoon.jpg"/></a>
+		<a href="images/flower1.jpg" data-lightbox="yw"><img src="images/flower1.jpg"/></a>
+		<a href="images/pool.jpg" data-lightbox="yw"><img src="images/pool.jpg"/></a>
+		<a href="images/flower3.jpg" data-lightbox="yw"><img src="images/flower3.jpg"/></a>
+		<a href="images/manz.jpg" data-lightbox="yw"><img src="images/manz.jpg"/></a>
+		<a href="images/an125.jpg" data-lightbox="yw"><img src="images/an125.jpg"/></a>
+		<a href="images/flower2.jpg" data-lightbox="yw"><img src="images/flower2.jpg"/></a>
+		<a href="images/ucen.jpg" data-lightbox="yw"><img src="images/ucen.jpg"/></a>
+		<a href="images/sunset.jpg" data-lightbox="yw"><img src="images/sunset.jpg"/></a>
+		<a href="images/rainbow.jpg" data-lightbox="yw"><img src="images/rainbow.jpg"/></a>
+		<a href="images/flower0.jpg" data-lightbox="yw"><img src="images/flower0.jpg"/></a>
+		<a href="images/ocean.jpg" data-lightbox="yw"><img src="images/ocean.jpg"/></a>
 	</div>
 
-	<script>
+	<script type="text/javascript">
 		var topbutton = document.getElementById("topBtn");
 		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
@@ -46,5 +50,7 @@
 		  document.documentElement.scrollTop = 0;
 		}
 	</script>
+	<script src="lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>
