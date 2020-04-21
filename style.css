@@ -11,6 +11,9 @@
     background-color: rgb(179, 172, 172);
     cursor: pointer;
 }
+#highlightBtn {
+    background-color: wheat;
+}
 .active, .btn:hover {
     background-color: wheat;
     color: black;
